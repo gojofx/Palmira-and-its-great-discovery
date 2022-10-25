@@ -73,6 +73,7 @@
 let questions;
 const banner = document.querySelector('#banner');
 const infoBanner = document.querySelector('#quesTy');
+const tittleB = document.querySelector('#quesTys');
 
 function re(){
   if ((resultado%2) == 0){
@@ -152,6 +153,7 @@ function re(){
   banner.classList.add('bannerPalmira');
   banner.classList.remove('bannerMalagana');
   infoBanner.innerHTML = "Palmira";
+  tittleB.innerHTML = "Palmira";
   }else if ((resultado%2) != 0){
     // alert('wenas');
     questions = [
@@ -232,6 +234,7 @@ function re(){
   banner.classList.remove('bannerPalmira');
   banner.classList.add('bannerMalagana');
   infoBanner.innerHTML = "Cultura Malagana";
+  tittleB.innerHTML = "Cultura Malagana";
 
   }
 
