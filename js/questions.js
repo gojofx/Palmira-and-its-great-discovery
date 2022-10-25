@@ -75,7 +75,7 @@ const banner = document.querySelector('#banner');
 const infoBanner = document.querySelector('#quesTy');
 
 function re(){
-  if (resultado == 1){
+  if ((resultado%2) == 0){
     // alert('shit');
     questions = [
       {
@@ -125,12 +125,13 @@ function re(){
       {
       numb: 5,
       question: "What are the city's tourist attractions??",
-      answer: "eXtensible Markup Language",
+      answer: "All",
       options: [
-        "eXtensible Markup Language",
-        "eXecutable Multiple Language",
-        "eXTra Multi-Program Language",
-        "eXamine Multiple Language"
+        "Parapente La buitrera",
+        "Bosque municipal",
+        "Plaza de Bolivar",
+        "All",
+        "None"
       ]
     },
     // you can uncomment the below codes and make duplicate as more as you want to add question
@@ -151,62 +152,66 @@ function re(){
   banner.classList.add('bannerPalmira');
   banner.classList.remove('bannerMalagana');
   infoBanner.innerHTML = "Palmira";
-  }else if (resultado == 0){
+  }else if ((resultado%2) != 0){
     // alert('wenas');
     questions = [
       {
       numb: 1,
-      question: "Malagana?",
-      answer: "Hyper Text Markup Language",
+      question: "What is malagana in palmira?",
+      answer: "one and three are true",
       options: [
-        "Hyper Text Preprocessor",
-        "Hyper Text Markup Language",
-        "Hyper Text Multiple Language",
-        "Hyper Tool Multi Language"
+        "is the culture that inhabited the territory a long time ago.",
+        "is a national heritage",
+        "an almost forgotten culture that is being recognized through events.",
+        "one and three are true",
+        "being in a bad mood",
+        "All answers are not true"
       ]
     },
       {
       numb: 2,
-      question: "What does CSS stand for?",
-      answer: "Cascading Style Sheet",
+      question: "There are two museums in Malagana, where are they located?",
+      answer: "The station of Ferrocarril and El Bolo",
       options: [
-        "Common Style Sheet",
-        "Colorful Style Sheet",
-        "Computer Style Sheet",
-        "Cascading Style Sheet"
+        "The station of Ferrocarril and El Bolo",
+        "Amaime and The starion of Ferricarril",
+        "Zamorano and El Bolo",
+        "Amaime and El Bolo",
+        "All answers are not true",
+        "all are true"
       ]
     },
       {
       numb: 3,
-      question: "What does PHP stand for?",
-      answer: "Hypertext Preprocessor",
+      question: "today 2022, __ years have passed since the discovery of La Cultura Malagana",
+      answer: "30",
       options: [
-        "Hypertext Preprocessor",
-        "Hypertext Programming",
-        "Hypertext Preprogramming",
-        "Hometext Preprocessor"
+        "10",
+        "48",
+        "23",
+        "30"
       ]
     },
       {
       numb: 4,
-      question: "What does SQL stand for?",
-      answer: "Structured Query Language",
+      question: "the cultural center for learning any kind of art is..",
+      answer: "La casa de la cultura",
       options: [
-        "Stylish Question Language",
-        "Stylesheet Query Language",
-        "Statement Question Language",
-        "Structured Query Language"
+        "The church Trinidad",
+        "La casa de la cultura",
+        "Teatro materon",
+        "Universidad nacional"
       ]
     },
       {
       numb: 5,
-      question: "What does XML stand for?",
+      question: "are efforts currently being made in palmira to revive this culture?",
       answer: "eXtensible Markup Language",
       options: [
-        "eXtensible Markup Language",
-        "eXecutable Multiple Language",
-        "eXTra Multi-Program Language",
-        "eXamine Multiple Language"
+        "No, it is not important to know about a culture that is already dead.",
+        "yes, because it is important to know the Roots of the territory.",
+        "yes, because there is money involved",
+        "yes, because yes"
       ]
     },
     // you can uncomment the below codes and make duplicate as more as you want to add question

@@ -3,25 +3,25 @@ var miRuleta = new Winwheel({
     numSegments: 12,
     outerRadius: 170,
     segments: [
-      { fillStyle: "#eb1c24", text: "0" },
-      { fillStyle: "#e86f36", text: "1" },
-      { fillStyle: "#fdaf43", text: "0" },
-      { fillStyle: "#fff001", text: "1" },
-      { fillStyle: "#bed63a", text: "0" },
-      { fillStyle: "#66ad33", text: "1" },
-      { fillStyle: "#009345", text: "0" },
-      { fillStyle: "#01969c", text: "1" },
-      { fillStyle: "#019cdf", text: "0" },
-      { fillStyle: "#1b65ba", text: "1" },
-      { fillStyle: "#652d90", text: "0" },
-      { fillStyle: "#a1268e", text: "1" },
+      { fillStyle: "#eb1c24", text: "1" },
+      { fillStyle: "#e86f36", text: "2" },
+      { fillStyle: "#fdaf43", text: "3" },
+      { fillStyle: "#fff001", text: "4" },
+      { fillStyle: "#bed63a", text: "5" },
+      { fillStyle: "#66ad33", text: "6" },
+      { fillStyle: "#009345", text: "7" },
+      { fillStyle: "#01969c", text: "8" },
+      { fillStyle: "#019cdf", text: "9" },
+      { fillStyle: "#1b65ba", text: "10" },
+      { fillStyle: "#652d90", text: "11" },
+      { fillStyle: "#a1268e", text: "12" },
 
 
     ],
     
     animation: {
       type: "spinToStop",
-      duration: 6,
+      duration: 8,
       callbackFinished: "mensaje()",
       callbackAfter: "dibujarIndicador()"
     }
@@ -39,9 +39,6 @@ var miRuleta = new Winwheel({
       alertContinue.classList.add("activeInfo"); //show quiz box
 
     }
-
-
-  
 
   }
 

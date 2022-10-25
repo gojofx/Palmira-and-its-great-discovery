@@ -587,3 +587,7 @@ span.bannerPalmira{
     color: white;
     text-shadow: 0 0 5px #00000088;
 }
+
+div.centro .restart{
+    margin: auto;
+}
