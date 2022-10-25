@@ -1,0 +1,272 @@
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    }
+
+  body{
+    background: #f8f8f8;
+  }
+  .c-Box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+  }
+  .cBox{
+    display: flex;
+    width: 100%;
+    height: 70%;
+  }
+  .c-BoxT{
+    display: grid;
+    height: 20%;
+  }
+  .c-BoxQuest{
+      height: 80vh;
+      display: grid;
+  }
+  .c-BoxC{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* display: flex; */
+    }
+
+  .c-Box1, .c-Box2{
+      background: #c7a16f;
+      font-size: 30px;
+      color: #ffffff;
+      text-shadow: 3px 3px #00000055;
+      cursor: pointer;
+      transition: .5s;
+    }
+    
+  .c-Box1:hover{
+      background: #a8875c;
+      transition: .5s;
+    }
+  .c-Box2:hover{
+      background: #a8875c;
+      transition: .5s;
+    }
+  .c-Box1{
+      width: 40%;
+      height: 50%;
+      margin: auto;
+      display: flex;
+      overflow: hidden;
+    }
+  .c-Box2{
+      width: 40%;
+      height: 50%;
+      margin: auto;
+      display: flex;
+    }
+  .tableroBase{
+    margin: auto;
+    width: 95%;
+    height: 80%;
+    background: #6d4b1f;
+    display: grid;
+    box-shadow: 0 0 5px 3px #35353563;
+    border: 1px solid #35353566;
+  }
+  .tablero{
+    margin: auto;
+    width: 97%;
+    height: 85%;
+    background: #43a047;
+    box-shadow: inset 0 0 20px #35353588;
+    display: grid;
+  }
+
+  .tablero p{
+    margin: auto;
+    font-size: 25px;
+    color: white;
+  }
+  .c-Box1::after{
+    content: "";
+    position: relative;
+    background-color: #8a6c4688;
+    border-top: 20px solid #f8f8f8;
+    border-bottom: 20px solid #f8f8f8;
+    border-left: 50px solid #46362100;
+    }
+  .c-Box2::after{
+    content: "";
+    position: relative;
+    background-color: #8a6c4688;
+    border-top: 20px solid #f8f8f8;
+    border-bottom: 20px solid #f8f8f8;
+    border-left: 50px solid #46362100;
+    }
+
+
+
+  .c-BoxT h1{
+    margin: auto;
+
+    }
+  .c-BoxC p{
+    margin: auto;
+    z-index: 2;
+    }
+  .contenedor{
+    display: flex;
+    height: 100vh;
+    }
+  .contenedorRuleta{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    }
+  .ruleta{
+    margin: auto;
+    width: 400px;
+    height: 100%;
+    display: grid;
+    }
+  .botonInicio{
+    height: 40%;
+    display: grid;
+  }
+  .espacio{
+    height: 60%;
+  }
+  .botonA{
+    margin: auto;
+  }
+  .weel{
+    position: absolute;
+    z-index: 1;
+  }
+  .decoration{
+      font-size: 120px;
+    }
+  .boton{
+      width: 60px;
+      height: 60px;
+      background: #ffffff;
+      position: absolute;
+      z-index: 99;
+      top: 170px;
+      left: 170px;
+      margin: auto;
+      border-radius: 5em;
+      box-shadow: 0 0 20px #00000055;
+    }
+  .boton::before{
+      content: "";
+      width: 20px;
+      height: 40px;
+      position: absolute;
+      margin-top: 10px;
+      border-radius: 100%;
+      margin-left: -20px;
+      background: #353535;
+      border-top: 20px solid #353535;
+      border-left: 20px solid #353535;
+      border-right: 20px solid black;
+    }
+    .flecha{
+      position: absolute;
+      z-index: 999;
+      margin-top: -200px;
+      margin-left: -25px;
+    }
+    .borderWeel{
+      width: 400px;
+      height: 400px;
+      top: 100px;
+      z-index: -2;
+      position: absolute;
+      display: grid;
+    }
+    .borderWeel1{
+      border-radius: 100%;
+      margin: auto;
+      background: #ffffff;
+      width: 90%;
+      height: 90%;
+      box-shadow: 0 0 20px #00000055;
+    }
+    .centro{
+      justify-content: center;
+      justify-items: center;
+    }
+
+    .modalBase{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #00000088;
+      z-index: 999;
+      display: grid;
+    }
+    .modalCuerpo{
+      background: #ffffff;
+      margin: auto;
+      width: 70%;
+      height: 80%;
+      border-radius: 1em;
+      display: grid;
+      cursor: default;
+    }
+    .modalContenido{
+      margin: auto;
+      width: 95%;
+      height: 90%;
+    }
+    .pregunta{
+      height: 10%;
+      text-align: center;
+    }
+    .contenidoPregunta{
+      height: 30%;
+      text-align: center;
+      display: grid;
+    }
+    
+    .respuesta{
+      height: 60%;
+      background: #cacaca11;
+      text-align: center;
+      display: grid;
+    }
+    .contenido{
+      margin: auto;
+    }
+    .respuesta .contenido ul{
+      display: flex;
+      gap: 40px;
+      text-align: start;
+    }
+    .respuesta .contenido li{
+      margin: 20px;
+    }
+
+@media (max-width:900px){
+
+  .cBox{
+    display: grid;
+    width: 100%;
+    height: 70%;
+    transition: .5s;
+    
+  }
+  .c-Box1{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+  }
+.c-Box2{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+  }
+}
