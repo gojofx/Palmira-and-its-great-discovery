@@ -206,7 +206,7 @@ function re(){
       {
       numb: 5,
       question: "are efforts currently being made in palmira to revive this culture?",
-      answer: "eXtensible Markup Language",
+      answer: "yes, because it is important to know the Roots of the territory",
       options: [
         "No, it is not important to know about a culture that is already dead.",
         "yes, because it is important to know the Roots of the territory.",
